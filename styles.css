@@ -8,6 +8,12 @@ h2 {
   font-family: "Montserrat", sans-serif;
 }
 
+h3 {
+  border: 5px solid coral;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 12px;
@@ -40,9 +46,11 @@ p {
 .info-box {
   color: #000000;
   padding: 5px;
-  height: 100px;
+  height: 300px;
   border: 3px green solid;
 }
+
+
 
 /* .footer {
   position: absolute;
