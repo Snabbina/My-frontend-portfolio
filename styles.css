@@ -1,6 +1,6 @@
 body {
   /* background-color: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); */
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  background-image: linear-gradient(to right, hsl(0, 0%, 93%) 0%, #e3e6e9 100%);
 }
 
 h1,
@@ -10,20 +10,31 @@ h2 {
 
 p {
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 
-/* Make rounden img https://www.w3schools.com/howto/howto_css_rounded_images.asp */
-/* .img-container {
-    /* border-radius: 50%;   */
-/* width: 60px;
-  height: 70px; */
-/* }  */
+.hero-container {
+  max-width: 1200px;
+  margin: 5px auto;
+  display: grid;
+  text-align: center;
+  border: 3px lime solid;
+  grid-column: span 2;
+}
+
+.Profil-img {
+  border-radius: 50%;
+  border: 3px solid coral;
+  width: 150px;
+  height: 150px;
+}
 
 .main-box {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-gap: 16px;
+  grid-gap: 10px;
+  text-align: center;
 }
 
 .info-box {
@@ -33,17 +44,27 @@ p {
   border: 3px green solid;
 }
 
-
+/* .footer {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  background-color: #000000;
+  color: #e3e6e9;
+  text-align: center;
+} */
 
 /* If the screen is larger than 600px make it two columns. */
 @media (min-width: 600px) {
-    .main-box { grid-template-columns: repeat(2, 1fr); }
+  .main-box {
+    grid-template-columns: repeat(2, 1fr);
   }
-
+}
 
 /* 
 If the screen is larger than 900px make it three columns. */
 
-  @media (min-width: 900px) {
-    .main-box { grid-template-columns: repeat(3, 1fr); }
+@media (min-width: 900px) {
+  .main-box {
+    grid-template-columns: repeat(3, 1fr);
   }
+}
