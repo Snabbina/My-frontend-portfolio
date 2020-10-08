@@ -1,11 +1,11 @@
 body {
   /* background-color: linear-gradient(45deg, #8baaaa 0%, #ae8b9c 100%); */
-  background-image: linear-gradient(to right, hsl(0, 0%, 93%) 0%, #e3e6e9 100%);
+  background-image: linear-gradient(to right, hsl(0, 0%, 93%) 0%, #edeee6 100%);
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Montserrat", sans-serif;
+  font-size: 30px;
 }
 
 h3 {
@@ -16,24 +16,44 @@ h3 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 18px;
+}
+
+/* HEADER SECTION STYLING */
+
+header {
+  background-image: linear-gradient(to right, hsl(174, 58%, 75%) 0%, #45eeb6 100%);
+  display: flex;
+  width: auto;
+  height: 300px;
+  justify-content: space-between;
+  align-items: flex-end;
+  /* margin-bottom: 20px;
+  padding: 30px; */ 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hero-container {
-  max-width: 1200px;
+  display: flex;
+  /* max-width: 1200px; */
   margin: 5px auto;
-  display: grid;
-  text-align: center;
-  border: 3px lime solid;
-  grid-column: span 2;
+  /* border: 3px lime solid; */
 }
 
 .Profil-img {
+  display: flex;
   border-radius: 50%;
   border: 3px solid coral;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
+
+/* STYLE OF INFO BOXES  */
 
 .main-box {
   max-width: 1200px;
